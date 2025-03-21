@@ -1,15 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="Assets/Css/Style.css">
+    <link rel="stylesheet" href="Assets/Css/Style.css" />
     <script src="Assets/JS/index.js" defer></script>
-</head>
-<body>
-    
-    
-    
-</body>
+  </head>
+  <body>
+    <h1>Forms-1</h1>
+    <form action="pages/Thanks.html">
+        <fieldset>
+            <legend><h1>Forms-1</h1></legend>
+            <label for="name">Type your name</label>
+            <input type="text" name="name" id="name" placeholder="Name" pattern="[A-Za-z ÆØÅæøå]{2, }"/>
+            <label for="lastname">Type your lastname</label>
+            <input type="text" name="lastname" id="lastname" placeholder="Lastname" pattern="[A-Za-z ÆØÅæøå]{2, }"/>
+            <label for="adress">type your adress</label>
+            <input type="adress" name="adress" id="adress" placeholder="Adress" required  pattern="[A-Za-z ÆØÅæøå]{2, }"/>
+            <label for="number">type your number</label>
+            <input type="number" name="postal-code" id="postal-code" placeholder="Postal Code" required pattern="[0-9]{8}"/>
+            <label for="email">type your email</label>
+            <input type="email" name="email" id="email" placeholder="YourEmail@gmail.com" required pattern="[^@]+@[^@]+\.[a-zA-Z]{2,6}"/>
+            <div>
+                <input type="submit" value="Submit"/>
+                <input type="reset" value="Reset"/>
+            </div>
+        </fieldset>
+    </form>
+  </body>
 </html>
+
+
