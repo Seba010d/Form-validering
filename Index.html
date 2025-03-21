@@ -8,27 +8,58 @@
     <script src="Assets/JS/index.js" defer></script>
   </head>
   <body>
-    <h1>Forms-1</h1>
-    <form action="pages/Thanks.html">
-        <fieldset>
-            <legend><h1>Forms-1</h1></legend>
-            <label for="name">Type your name</label>
-            <input type="text" name="name" id="name" placeholder="Name" pattern="[A-Za-z ÆØÅæøå]{2, }"/>
-            <label for="lastname">Type your lastname</label>
-            <input type="text" name="lastname" id="lastname" placeholder="Lastname" pattern="[A-Za-z ÆØÅæøå]{2, }"/>
-            <label for="adress">type your adress</label>
-            <input type="adress" name="adress" id="adress" placeholder="Adress" required  pattern="[A-Za-z ÆØÅæøå]{2, }"/>
-            <label for="number">type your number</label>
-            <input type="number" name="postal-code" id="postal-code" placeholder="Postal Code" required pattern="[0-9]{8}"/>
-            <label for="email">type your email</label>
-            <input type="email" name="email" id="email" placeholder="YourEmail@gmail.com" required pattern="[^@]+@[^@]+\.[a-zA-Z]{2,6}"/>
-            <div>
-                <input type="submit" value="Submit"/>
-                <input type="reset" value="Reset"/>
-            </div>
-        </fieldset>
+    <form action="Thanks.html">
+      <fieldset>
+        <legend><h1>Forms-1</h1></legend>
+        <label for="name">Type your name</label>
+        <input
+          type="text"
+          name="name"
+          id="name"
+          placeholder="Name"
+          minlength="2"
+          required
+        />
+        <label for="lastname">Type your lastname</label>
+        <input
+          type="text"
+          name="lastname"
+          id="lastname"
+          placeholder="Lastname"
+          minlength="2"
+          required
+        />
+        <label for="adress">type your adress</label>
+        <input
+          type="adress"
+          name="adress"
+          id="adress"
+          placeholder="Adress"
+          minlength="5"
+          required
+        />
+        <label for="number">type your number</label>
+        <input
+          type="number"
+          name="postal-code"
+          id="postal-code"
+          placeholder="Postal Code"
+          required
+        />
+        <label for="email">type your email</label>
+        <input
+          type="email"
+          name="email"
+          id="email"
+          placeholder="Email"
+          required
+        />
+
+        <div>
+          <input type="submit" value="Submit" />
+          <input type="reset" value="Reset" />
+        </div>
+      </fieldset>
     </form>
   </body>
 </html>
-
-
