@@ -90,6 +90,12 @@ form fieldset > div > {
   width: 100%;
 }
 
+#button {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  cursor: pointer;
+}
+
 /* #endregion */
 
 /* Responsive Design */
